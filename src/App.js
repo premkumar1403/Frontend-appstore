@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import './styles/search_bar.css'
+import Searchbar from './components/Searchbar'
+import Elements from "./components/Elements";
+import {Appstore} from './context/Appstorecontext'
 function App() {
+  const [search, setsearch] = useState('');
+  const [category, setcategory] = useState("all");
+  function handlesearch(search) {
+    setsearch(search);
+  }
+  function handlecategory(category) {
+    setcategory(category)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Appstore.Provider value={{search,category,handlesearch,handlecategory}}>
+        <Searchbar />
+        <Elements/>
+      </Appstore.Provider>
     </div>
   );
 }

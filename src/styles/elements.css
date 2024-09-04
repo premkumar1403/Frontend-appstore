@@ -1,0 +1,27 @@
+.cardrow{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+img{
+    height: 180px;
+    width: 180px;
+    border-radius: 20px;
+    display: block;
+    margin:auto;
+    padding-top: 10px;
+    flex: 1 0 20%;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+}

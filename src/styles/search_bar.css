@@ -1,0 +1,39 @@
+*{
+  margin: 5px;
+  padding: 0px;
+}
+.box{
+  height: 50px;
+  width: 70%;
+  border: 2px solid black;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+input{
+  width: 95%;
+  height: 30px;
+  display: block;
+  margin: auto;
+  margin-top: 4px;
+  border: none;
+}
+input:focus{
+  outline: none;
+}
+.box-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+ul>li{
+  list-style: none;
+  font-size: x-large;
+  cursor: pointer;
+}
