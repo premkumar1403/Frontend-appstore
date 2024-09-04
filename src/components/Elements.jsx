@@ -8,7 +8,7 @@ const Elements = () => {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        let url = "http://localhost:3500/";
+        let url = "https://backend-appstore.vercel.app/";
         if (category !== "all") {
           url += `?category=${category}`;
         }
